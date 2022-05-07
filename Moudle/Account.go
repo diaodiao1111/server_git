@@ -43,7 +43,7 @@ func NewAccounts(user_name string, pwd string, deposit float64) *accounts {
 
 // 存款
 
-func (a *accounts) SetBalance(user_name string, money float64, pwd string) {
+func (a *accounts) SetBalance(money float64, pwd string) {
 
 	if pwd != a.pwd {
 		fmt.Println("passwd 不正确")
